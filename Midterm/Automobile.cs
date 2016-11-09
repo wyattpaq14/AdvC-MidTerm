@@ -33,9 +33,30 @@ namespace Midterm
         }
 
 
-        public override string displayinfo()//overrides the display method
+        public override string displayInfo()//overrides the display method
         {
-            return base.displayinfo() + "\n" + "Transmission type is: " + this.TransType;
+            return base.displayInfo
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                () + "\n" + "Transmission type is: " + this.TransType;
         }
     }
 }

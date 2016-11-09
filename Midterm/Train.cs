@@ -32,9 +32,9 @@ namespace Midterm
         }
 
 
-        public override string displayinfo()//overrides the display method
+        public override string displayInfo()//overrides the display method
         {
-            return base.displayinfo() + "\n" + "Trolly car amount is: " + this.TCarAmount;
+            return base.displayInfo() + "\n" + "Trolly car amount is: " + this.TCarAmount;
         }
     }
 }

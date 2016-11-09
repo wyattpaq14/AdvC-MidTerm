@@ -36,6 +36,9 @@
             this.txtDistance = new System.Windows.Forms.TextBox();
             this.txtAverageSpeed = new System.Windows.Forms.TextBox();
             this.lblDisplay = new System.Windows.Forms.Label();
+            this.btnDisplay = new System.Windows.Forms.Button();
+            this.lblOption = new System.Windows.Forms.Label();
+            this.cbClassOption = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnAutomobile
@@ -103,17 +106,50 @@
             // lblDisplay
             // 
             this.lblDisplay.AutoSize = true;
-            this.lblDisplay.Location = new System.Drawing.Point(19, 229);
+            this.lblDisplay.Location = new System.Drawing.Point(16, 247);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(66, 13);
             this.lblDisplay.TabIndex = 7;
             this.lblDisplay.Text = "Final Display";
+            // 
+            // btnDisplay
+            // 
+            this.btnDisplay.Location = new System.Drawing.Point(12, 319);
+            this.btnDisplay.Name = "btnDisplay";
+            this.btnDisplay.Size = new System.Drawing.Size(497, 23);
+            this.btnDisplay.TabIndex = 8;
+            this.btnDisplay.Text = "Display";
+            this.btnDisplay.UseVisualStyleBackColor = true;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
+            // 
+            // lblOption
+            // 
+            this.lblOption.AutoSize = true;
+            this.lblOption.Location = new System.Drawing.Point(16, 202);
+            this.lblOption.Name = "lblOption";
+            this.lblOption.Size = new System.Drawing.Size(66, 13);
+            this.lblOption.TabIndex = 9;
+            this.lblOption.Text = "Class Option";
+            // 
+            // cbClassOption
+            // 
+            this.cbClassOption.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbClassOption.FormattingEnabled = true;
+            this.cbClassOption.Items.AddRange(new object[] {
+            "Select class to begin"});
+            this.cbClassOption.Location = new System.Drawing.Point(155, 193);
+            this.cbClassOption.Name = "cbClassOption";
+            this.cbClassOption.Size = new System.Drawing.Size(354, 21);
+            this.cbClassOption.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(521, 354);
+            this.Controls.Add(this.cbClassOption);
+            this.Controls.Add(this.lblOption);
+            this.Controls.Add(this.btnDisplay);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.txtAverageSpeed);
             this.Controls.Add(this.txtDistance);
@@ -139,6 +175,9 @@
         private System.Windows.Forms.TextBox txtDistance;
         private System.Windows.Forms.TextBox txtAverageSpeed;
         private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.Button btnDisplay;
+        private System.Windows.Forms.Label lblOption;
+        private System.Windows.Forms.ComboBox cbClassOption;
     }
 }
 

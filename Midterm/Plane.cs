@@ -32,9 +32,9 @@ namespace Midterm
         }
 
 
-        public override string displayinfo()//overrides the display method
+        public override string displayInfo()//overrides the display method
         {
-            return base.displayinfo() + "\n" + "Engine is: " + this.EngType;
+            return base.displayInfo() + "\n" + "Engine is: " + this.EngType;
         }
     }
 }

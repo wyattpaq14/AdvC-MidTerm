@@ -43,7 +43,7 @@ namespace Midterm
             }
         }
        
-        public virtual string displayinfo()
+        public virtual string displayInfo()
         {
             return "The vehicle type is " + vType + "\n" + "The average speed is " + avgSpeed + "\n";
         }
