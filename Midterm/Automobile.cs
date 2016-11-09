@@ -6,8 +6,36 @@ using System.Threading.Tasks;
 
 namespace Midterm
 {
-    public class Automobile
-    {
+    //class for automobiles
+    public class Automobile : Vehicle
 
+
+    {
+        private string transType;
+
+        public Automobile(string vType, string avgSpeed, string transType) : base(vType, avgSpeed) //call base class
+        {
+            this.TransType = transType;
+        }
+
+
+
+        public string TransType
+        {
+            get
+            {
+                return transType;
+            }
+            set
+            {
+                transType = value;
+            }
+        }
+
+
+        public override string displayinfo()//overrides the display method
+        {
+            return base.displayinfo() + "\n" + "Transmission type is: " + this.TransType;
+        }
     }
 }

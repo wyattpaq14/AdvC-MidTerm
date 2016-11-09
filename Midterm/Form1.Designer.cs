@@ -46,6 +46,7 @@
             this.btnAutomobile.TabIndex = 0;
             this.btnAutomobile.Text = "Automobile";
             this.btnAutomobile.UseVisualStyleBackColor = true;
+            this.btnAutomobile.Click += new System.EventHandler(this.btnAutomobile_Click);
             // 
             // btnTrain
             // 
@@ -55,6 +56,7 @@
             this.btnTrain.TabIndex = 1;
             this.btnTrain.Text = "Train";
             this.btnTrain.UseVisualStyleBackColor = true;
+            this.btnTrain.Click += new System.EventHandler(this.btnTrain_Click);
             // 
             // btnPlane
             // 
@@ -64,6 +66,7 @@
             this.btnPlane.TabIndex = 2;
             this.btnPlane.Text = "Plane";
             this.btnPlane.UseVisualStyleBackColor = true;
+            this.btnPlane.Click += new System.EventHandler(this.btnPlane_Click);
             // 
             // lblDistance
             // 

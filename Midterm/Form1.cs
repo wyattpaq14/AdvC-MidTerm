@@ -15,6 +15,29 @@ namespace Midterm
         public Form1()
         {
             InitializeComponent();
+
         }
+        //Declare vairable to store which button is clicked
+        //determining which vehicle to choose
+        public string vehType = "";
+
+
+        //declare buttons to determin which vehicle is selected
+        #region buttons
+        private void btnAutomobile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlane_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
