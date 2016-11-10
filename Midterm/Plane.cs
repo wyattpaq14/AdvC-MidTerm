@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Midterm
 {
@@ -12,7 +13,7 @@ namespace Midterm
     {
         private string engType;
 
-        public Plane(string vType, string avgSpeed, string engType) : base(vType, avgSpeed) //call base class
+        public Plane(string vType, string distance, string avgSpeed, string engType) : base(vType, distance, avgSpeed) //call base class
         {
             this.EngType = engType;
         }
@@ -34,7 +35,8 @@ namespace Midterm
 
         public override string displayInfo()//overrides the display method
         {
-            return base.displayInfo() + "\n" + "Engine is: " + this.EngType;
+            Trip trip = new Trip(this.VType, this.AvgSpeed, this.Distance);
+            return base.displayInfo() + "\n" + "Engine is: " + this.EngType + "\n" + "Travel time is: " + trip.getTime() + " hours";
         }
     }
 }

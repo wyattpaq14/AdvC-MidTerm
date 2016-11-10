@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Midterm
 {
@@ -13,7 +14,7 @@ namespace Midterm
     {
         private string transType;
 
-        public Automobile(string vType, string avgSpeed, string transType) : base(vType, avgSpeed) //call base class
+        public Automobile(string vType, string distance, string avgSpeed, string transType) : base(vType, distance, avgSpeed) //call base class
         {
             this.TransType = transType;
         }
@@ -33,30 +34,11 @@ namespace Midterm
         }
 
 
+
         public override string displayInfo()//overrides the display method
         {
-            return base.displayInfo
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                () + "\n" + "Transmission type is: " + this.TransType;
+            Trip trip = new Trip(this.VType, this.AvgSpeed, this.Distance);
+            return base.displayInfo() + "\n" + "Transmission type is: " + this.TransType + "\n" + "Travel time is: " + trip.getTime() + " hours";
         }
     }
 }

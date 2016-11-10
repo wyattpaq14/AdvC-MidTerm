@@ -10,14 +10,16 @@ namespace Midterm
     public class Vehicle
     {
         private string vType;
+        private string distance;
         private string avgSpeed;
 
         public Vehicle()
         { }
 
-        public Vehicle(string vType, string avgSpeed)
+        public Vehicle(string vType, string distance, string avgSpeed)
         {
             this.VType = vType;
+            this.Distance = distance;
             this.AvgSpeed = avgSpeed;
         }
         public string VType
@@ -31,6 +33,17 @@ namespace Midterm
                 vType = value;
             }
         }
+        public string Distance
+        {
+            get
+            {
+                return distance;
+            }
+            set
+            {
+                distance = value;
+            }
+        }
         public string AvgSpeed
         {
             get
@@ -42,10 +55,11 @@ namespace Midterm
                 avgSpeed = value;
             }
         }
-       
+
+
         public virtual string displayInfo()
         {
-            return "The vehicle type is " + vType + "\n" + "The average speed is " + avgSpeed + "\n";
+            return "The vehicle type is " + vType + "\n" + "The average speed is " + avgSpeed;
         }
     }
 

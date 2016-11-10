@@ -98,6 +98,7 @@
             // 
             // txtAverageSpeed
             // 
+            this.txtAverageSpeed.Enabled = false;
             this.txtAverageSpeed.Location = new System.Drawing.Point(155, 154);
             this.txtAverageSpeed.Name = "txtAverageSpeed";
             this.txtAverageSpeed.Size = new System.Drawing.Size(354, 20);
@@ -141,6 +142,7 @@
             this.cbClassOption.Name = "cbClassOption";
             this.cbClassOption.Size = new System.Drawing.Size(354, 21);
             this.cbClassOption.TabIndex = 10;
+            this.cbClassOption.SelectedIndexChanged += new System.EventHandler(this.cbClassOption_SelectedIndexChanged);
             // 
             // Form1
             // 
